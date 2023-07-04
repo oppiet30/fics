@@ -1,0 +1,5 @@
+Usage: bell
+
+  Toggles your 'bell' variable. Equivilant to "set bell"
+
+See also: variables
