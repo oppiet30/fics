@@ -1,0 +1,9 @@
+Usage: draw
+
+  Requests a draw from your opponent. Accepts a draw if one is offered to
+you.
+
+  This should also claim a draw in the case of the 50 move rule or
+3 times repitition, but that is not implemented.
+
+See also: accept
