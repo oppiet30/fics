@@ -1,0 +1,7 @@
+Usage: channel [0-99]
+
+  Turns on the channel specified. Any messages sent to that channel, you
+will here. If the channel number is omitted then all channels you
+are listening too will be turned off.
+
+See Also: inchannel tell say
