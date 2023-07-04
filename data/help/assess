@@ -1,0 +1,7 @@
+Usage: assess [user1 [user2]]
+
+  Displays how ratings will be effected if user1 played user2. If both
+parameters are omitted and you are playing a game, then user1 is you and
+user2 is your opponent. If only one paramenter is given, then user1 is
+your and user2 is that parameter. If both parameters are given then
+user1 and user2 are specified.
