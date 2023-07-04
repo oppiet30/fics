@@ -1,0 +1,75 @@
+
+FICS-ICS Differences
+
+  The FICS is an internet chess server that was written from scratch
+by Richard Nash.
+
+SIMILARITIES:
+  The FICS was definitely written with the ICS in mind. It is my intention
+to permit ICS users to easily use both systems. To that end, I have
+duplicated all of the board styles and most of the commands. If your
+interface (xboard, giiic, ...) has trouble parsing FICS's output,
+please report the problem. Even better, fix the problem and send me the
+fix.
+
+WHAT'S BETTER:
+1. It's free. Not free in the sense of you don't have to pay money for
+   it (it is of course that also), I mean free in the sense that you
+   can get access to the source code. It is my hope that this difference
+   will propel the FICS into becoming the better server in the long run.
+   Also, this allows multiple servers to be set up, hopefully minimizing
+   lag. If you want to set up your own server, login to the server and
+   type 'help newservers'.
+
+2. There is a distributed ratings server. This allows your ratings to
+   be valid on a number of different servers. You can play wherever
+   you find the best competition, or have the least lag and your
+   ratings will follow you there.
+
+3. You can play SIMULS. Login to the server and type 'help simuls'
+
+4. You can takeback, switch sides, or pause the clock if your opponent
+   agrees.
+
+5. You can set your games to be private so they can't be observed.
+
+6. A 'query' command for asking serious questions. Like shout, except the
+   i_shout flag doesn't stop it. You are limited to 2 query's per hour.
+
+7. You can load positions from a stored database to use as your starting
+   position for a game. (This is how wild games are implemented.)
+
+WHAT'S DIFFERENT:
+1. When your clock hits zero it stays there even if you have an
+   increment. Essentially, your flag cannot un-fall like the current
+   ICS.
+
+2. There are probably a million minor differences in the way things are
+   displayed or in command syntaxes.
+
+3. The lists are kept in the 'old' style. +censor and +channel don't
+   work.
+
+4. Some of the descriptive notation move inputs are not accepted by
+   FICS. Things line NxP and pxp should be writtend in algebraic.
+
+WHAT'S WORSE:
+1. Some of the commands are not implemented at all or not as well as the
+   ICS. Most notably 'who', 'players', and 'messages'.
+
+2. An algabraic deparser is needed. Currently the move output is computer
+   style.
+
+3. It may be buggy. It is new software and there are bound to be bugs. I
+   hope a growing FICS community will help find and clean up the bugs.
+
+GOAL:
+  While the ICS goes on making better and niftier ways to talk to
+  each other, I hope that the FICS will be better for those interested
+  in playing chess. Improvements in the chess area (ie. analysis tools,
+  setting up positions, etc...) will take presidence in development.
+
+WINNERS AND LOSERS:
+  Log into the server and type 'help soapbox'
+
+See Also: sourcecode todo soapbox simuls
