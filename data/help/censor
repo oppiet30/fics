@@ -1,0 +1,7 @@
+Usage: censor [user]
+
+  Will place 'user' on your censor list. This list is players from whom
+you will not here anything. If 'user' is omitted, then your censor list
+is printed.
+
+See Also: uncensor tell shout say
