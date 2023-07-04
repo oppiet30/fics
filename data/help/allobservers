@@ -1,0 +1,6 @@
+Usage: allobservers [game,user]
+
+  If a game is specified then all users observing that game are
+displayed, otherwise all users observing any game are displayed.
+
+See Also: observe
