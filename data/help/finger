@@ -1,0 +1,6 @@
+Usage: finger [user]
+
+  Displays information about the given user. If "user" is omitted then
+your information is displayed.
+
+See also: variables
