@@ -1,0 +1,5 @@
+Usage: addplayer playername
+RESTRICTED TO ADMINISTRATORS.
+
+  Adds a local player to the server. The prefered way of doing this
+is through the fics_addplayer program.
