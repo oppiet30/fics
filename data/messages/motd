@@ -1,0 +1,11 @@
+
+If you want to look at the source code it is available via anonymous ftp at
+ftp.visus.com in /pub/FICS/FICS.tar.Z. Send any bug fixes or improvements
+to nash@visus.com.
+
+Do 'help commands' for a complete list of the commands that are implemented.
+Do 'help todo' and 'help fics_differences' for more information.
+
+Thanks for your help in debugging.
+This is alpha software so expect bugs.
+Please report bugs to nash@visus.com.
