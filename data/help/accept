@@ -1,0 +1,10 @@
+Usage: accept [1-n, draw, adjourn, abort, takeback, all]
+
+  Accepts an offer that is made to you. If no parameter is given and
+there is only one offer, you accept it. If there is more than one
+offer (for example multiple match offers) then you must specify
+which one you want. You can either choose it by number, or by type
+if the type is draw, adjourn, abort, or takeback. "All" accepts all
+pending offeres.
+
+See Also: decline pending match draw adjourn abort takeback
