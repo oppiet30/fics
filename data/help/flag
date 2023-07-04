@@ -1,0 +1,10 @@
+Usage: flag
+
+  If your opponent has run out of time, and you have not, you get
+the win. If both players are out of time, then it is a draw.
+
+  If your opponent appears to have lost contact or hasn't responed
+in a reasonable amount of time, they probably have lag. Use
+"courtesyabort" to end the game like a good sport.
+
+See Also: courtesyabort
