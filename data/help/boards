@@ -1,0 +1,8 @@
+Usage: boards [catagory]
+
+  If catagory is given then this lists all available boards for that
+catagory. If the parameter is omited, then this lists all available
+catagories. You can start your game from the position given in any of
+these boards.
+
+See also: match wild
