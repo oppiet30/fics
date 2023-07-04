@@ -1,0 +1,40 @@
+TODO LIST
+
+- Fix move parser
+  Problems noted:
+  1. Castling from or through check is not prevented.
+
+- Private flag
+
+- Saving and Loading games
+
+- Ratings
+
+- Game histories
+
+- Best list - statistics
+
+- Remote Ratings by e-mail
+
+- messages
+
+- command aliases
+
+- remplayer ADMIN
+
+- bumpplayer ADMIN
+
+- shutdown put in a countdown timer.
+
+- registration program
+
+- quota
+
+- it command ("it doesn't really feel like doing this")
+
+- Save login locations and print times of last login
+  "Last login at <time> from <inet-addr>"
+  "This login at <time> from <inet-addr>"
+==============================================================================
+BUG LIST
+
