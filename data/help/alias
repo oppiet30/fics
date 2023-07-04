@@ -1,0 +1,32 @@
+Usage: alias [word [string]]
+
+  Sets up a command alias so that "word" is equivalent to typing "string".
+If "string" is omitted then the current value of "word" is displayed. If
+both paramenters are omitted, then all of your aliases are displayed.
+
+  Note: Aliases are not transitive. This sequence:
+
+    alias foo bar
+    alias bar baz
+
+  will NOT result in "foo" being equivalent to "baz".
+
+Standard aliases (everyone has these by default):
+  a             accept
+  exit          quit
+  f             finger
+  logout        quit
+  m             match
+  p             who a
+  players       who a
+  sh            shout
+  t             tell
+  vars          variables
+  w             who
+  .             tell .
+  ,             tell ,
+  !             shout
+  :             it
+  ?             query
+
+See Also: unalias
