@@ -1,0 +1,6 @@
+Usage: abort
+
+  Requests that your game be aborted. Accepts the abort if one is offered
+to you.
+
+See Also: accept
