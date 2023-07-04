@@ -1,0 +1,6 @@
+Usage: adjourn
+
+  Requests that a game be saved for later play. If such a proposal
+is pending for you, then it is accepted.
+
+See Also: accept decline
