@@ -1,0 +1,6 @@
+Usage: moves [game,user]
+
+  Displays the moves to the specified game, or to the game you are
+playing if not game is specified.
+
+See Also: mailmoves oldmoves mailoldmoves
