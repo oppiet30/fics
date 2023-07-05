@@ -1,0 +1,6 @@
+Usage: load user1 user2
+
+  First off, you must be either user1 or user2. This command continues
+a stored game between user1 and user2 where it was saved.
+
+See Also: stored
