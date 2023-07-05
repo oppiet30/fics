@@ -1,0 +1,5 @@
+Usage: muzzle user
+RESTRICTED TO ADMINISTRATORS.
+
+  Prevents a user from doing practically anything. Meant for use on
+abusive users who refuse to cooperate. Please use sparingly.
