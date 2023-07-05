@@ -1,0 +1,6 @@
+Usage: logons [user]
+
+  Shows the last 10 or so logons for the given user. If "user" is
+omitted then your last logons are displayed.
+
+See Also: llogons
