@@ -2,3 +2,4 @@ Usage: history [user]
 
   Shows the results of the last 14 or so games that 'user' played. If
 'user' is omitted then your history is shown.
+ 
