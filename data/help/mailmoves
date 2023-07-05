@@ -1,0 +1,6 @@
+Usage: mailmoves [game,user]
+
+  Mails the moves to the specified game, or to the game you are
+playing if not game is specified, to your email address.
+
+See Also: moves oldmoves mailoldmoves
