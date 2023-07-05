@@ -1,0 +1,4 @@
+Usage: oldmoves [user]
+
+  Displays the moves of the most recent game of 'user', or of yourself
+if 'user' is omitted.
