@@ -1,0 +1,5 @@
+Usage: llogons
+
+  Shows the last 30 or so logons and logoffs to the server.
+
+See Also: logons
