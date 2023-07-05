@@ -1,0 +1,6 @@
+Usage: messages [user message]
+
+  With no arguments this will display any messages you may have. If you
+supply a user and message then that message will be sent to that user.
+
+See also: clearmessages
