@@ -1,0 +1,5 @@
+Usage: observe [game,user]
+
+  Puts or removes a game from your observation list.
+
+See Also: allobservers
