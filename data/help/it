@@ -1,0 +1,7 @@
+Usage: it message
+
+  This is just like shout, except that the message is the command you
+typed with the "it" being replaced by your name. This command can be
+abbreviated with ":".
+
+See also: shout query censor
