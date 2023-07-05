@@ -1,0 +1,7 @@
+Usage: inchannel [0-99]
+
+  Lists all users currently listening to the given channel. If the
+channel number is omitted then all users listening to all channels
+are displayed.
+
+See Also: channel
