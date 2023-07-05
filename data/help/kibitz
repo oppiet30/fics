@@ -1,0 +1,7 @@
+Usage: kibitz message
+
+  Sends your message to all the observers of a game AND to the players.
+It is considered bad manners to discuss the game with this command
+because it would be assisting the players. Use "whisper" instead.
+
+See Also: whisper censor
