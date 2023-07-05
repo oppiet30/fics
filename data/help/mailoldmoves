@@ -1,0 +1,6 @@
+Usage: mailoldmoves [user]
+
+  Mails the moves of the last game played by 'user' or of yourself if
+'user' is omitted to your email address.
+
+See Also: moves mailmoves oldmoves
