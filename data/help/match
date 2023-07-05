@@ -1,0 +1,31 @@
+Usage: match user [[Start] [Inc] [Black_Start Black_Inc] board_catagory board]
+
+  Requests a match with a given user. The resmaining paramenters specify
+the time controls of the match. If none are given then a '2 12' match
+is specified. If only 'Start' is given then 'Inc' is assumend to be zero.
+If a time is given for Black then the original requestor of the match
+will play the White side, otherwise the side will be chosen "fairly".
+
+  Start's are given in minutes, and Inc's in seconds.
+
+  The final parameters can only be given after all of the other parameters. They specify the starting position for the game. If they are not supplied then "standard" and "standard" are used.
+
+  Here are some examples that may help:
+
+match red 5
+  Requests a 5 minute blitz match with red.
+
+match red 30 30
+  Requests a 30 minute match with 30 second increments with red.
+
+match red 30 0 15 0
+  Requests time-odds match with red. White will have 30 minutes on
+  his clock, and black will have 15.
+
+match red 2 12 0 0 openings ruy-lupez
+  Requests a match with red starting in the ruy-lupez opening.
+
+  If a game request is already pending from that user, and the time controls
+agree, then the match will start, otherwise a new proposal will be made.
+
+See also: accept variables(rated, private, ...) boards
