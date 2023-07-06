@@ -1,0 +1,6 @@
+Usage: takeback [n]
+
+  Requests a takeback of 'n' half-moves in the current game. If 'n' is
+omitted then 1 is assumed.
+
+See Also: accept
