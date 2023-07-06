@@ -1,0 +1,6 @@
+Usage: refresh [game]
+
+  Redisplays the given game. If 'game' is omitted then the game your
+are playing or observing will be redisplayed.
+
+See Also: games
