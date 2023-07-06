@@ -1,0 +1,32 @@
+# Makefile for FICS
+# This was originally written under NeXTSTEP
+#
+# Define the system below that you are compiling on.
+SYSFLAG=-DSYSTEM_NEXT
+
+# Set the flags for your system
+
+# Turn on optimization
+# OPTFLAGS=-O
+
+# Turn on debugging
+DEBUGFLAGS=-g -DDEBUG
+
+# Anything else you care to flag?
+OTHERFLAGS=-Wall
+
+# Which architectures are you compiling for? (NeXTSTEP)
+# ARCHFLAGS=-arch m68k -arch i386
+
+PROGRAM=fics
+
+# If you don't have the vers_string program do this...
+#VERSION=echo 'char SGS_VERS[]=""; char VERS_NUM[]="1.0";'
+# instead of this...
+VERSION=vers_string -c ${PROGRAM}
+
+CC=cc
+CFLAGS=${SYSFLAG} ${OPTFLAGS} ${DEBUGFLAGS} ${OTHERFLAGS} ${ARCHFLAGS}
+LNFLAGS=-lm
+
+include ./Makefile.common
