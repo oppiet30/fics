@@ -1,0 +1,3 @@
+Usage: time [game,user]
+
+  Shows how much time is left in the specified game, or in your game.
