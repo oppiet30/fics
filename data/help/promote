@@ -1,0 +1,5 @@
+Usage: promote {q,r,b,[kn]}
+
+  Sets the piece that you will promote a pawn to when you reach
+the back rank. This is set automatically at the beginning of each
+game to 'q'.
