@@ -1,0 +1,4 @@
+Usage: pose user command
+RESTRICTED TO ADMINISTRATORS.
+
+  Executes 'command' as if it were typed by 'user'.
