@@ -1,0 +1,6 @@
+Usage: stored [user]
+
+  Displays all of the stored games of 'user' or of yourself if
+'user' is omitted.
+
+See Also: load
