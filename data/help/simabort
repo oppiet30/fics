@@ -1,0 +1,6 @@
+Usage: simabort
+
+  Aborts the current board. Use this if the player you are playing is
+obnoxious or taking too long. Don't use it if you are losing.
+
+See also: simmatch simpass
