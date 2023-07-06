@@ -1,0 +1,5 @@
+Usage: open
+
+  Toggles your 'open' variable. Equivilant to "set open"
+
+See also: variables
