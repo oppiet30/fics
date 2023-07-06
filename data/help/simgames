@@ -1,0 +1,6 @@
+Usage: simgames [player]
+
+  Shows the number of active boards you are playing in a simul. If a
+parameter is specified, then shows how many boards that player is playing.
+
+See also: simmatch
