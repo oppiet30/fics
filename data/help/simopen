@@ -1,0 +1,5 @@
+Usage: simopen
+
+  Toggles your 'simopen' variable. Equivilant to "set open"
+
+See also: variables
