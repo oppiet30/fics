@@ -1,0 +1,14 @@
+W_Init: 1200
+W_Inc: 120
+B_Init: 0
+B_Inc: 0
+TimeStart: 29960315
+W_Time: 1199
+B_Time: 1200
+ClockStopped: 0
+Rated: 0
+Private: 0
+Type: 1
+HalfMoves: 0
+GameState: IsNext
+4 1 0 0 0 0 129 132 2 1 0 0 0 0 129 130 3 1 0 0 0 0 129 131 5 1 0 0 0 0 129 133 6 1 0 0 0 0 129 134 3 1 0 0 0 0 129 131 2 1 0 0 0 0 129 130 4 1 0 0 0 0 129 132 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 1
