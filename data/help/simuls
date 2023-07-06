@@ -1,0 +1,38 @@
+  To play simul's you need to do the following.
+
+1. Turn on your simopen flag with "simopen".
+
+2. Others must chalange you with "simmatch"
+
+3. You accept or reject the chalanges as they come in. You play WHITE in
+   all games.
+
+4. When you are satisfied that you have started the number of games
+   that you can handle, turn off your simopen flag. You can see how
+   many games you are playing with "simgames".
+
+5. You can then start making moves on the board. The "simnext" command
+   moves you to the next board.
+
+6. If a player is taking too long to move for your tastes, you can abort
+   that game with "simabort". You are in control.
+
+7. When all boards are complete, you will get your results.
+
+  To play against a simul
+
+1. Chalange the person who will be playing, when accepted you will be
+   playing BLACK.
+
+2. You will be informed when the simul player is coming to your board. You
+   should be prepared to move either before or shortly after that player
+   arrives at your board. If you do not move, you could be aborted.
+
+3. It is impolite to offer a draw unless that player is at your board. It
+   could very easily confuse the simul player if offers come in from all
+   around the table.
+
+4. If your game ends early, you may want to turn on your ginform flag
+   so that you can see the final result.
+
+See also: simmatch simgames simnext simpass simopen simabort
