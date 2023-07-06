@@ -1,0 +1,7 @@
+Usage: simmatch player
+
+  Requests a simul match with the given player. That player must have their
+"simopen" flag on to accept simul requests. Once a match has started, you
+will be informed where in line you are.
+
+See also: accept simopen
