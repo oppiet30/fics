@@ -1,0 +1,19 @@
+There are plenty of things to do on the server. Here is a list.
+
+1. The who command is lame and needs to be reworked.
+
+2. Help should have partial word as well as wildcard matching.
+
+3. Help should also be better organized. Lists should be catagorized.
+
+4. The output move format is computer algebraic. An algabraic de-parser
+   is needed.
+
+5. Messages.
+
+Any more???
+
+If you wish to work on any of these things just get the code. It is
+free.
+
+See Also: sourcecode newservers
