@@ -1,0 +1,13 @@
+Usage: tell user message
+
+  Transmits your message to the user specified. The 'user' can also
+be a channel number. If you tell "." something then the message is
+sent to the last person you told.
+
+  tell . Hi
+is also equivalent to
+  .Hi
+
+  "," can be used for the last channel number similarly.
+
+See also: say censor shout channel kibitz whisper query shout
