@@ -1,0 +1,19 @@
+Usage: who [o][r][f][a][g][s][b][t][v][n][1-9[1-9]]
+
+  Displays a list of users who are connected to the server according
+to the parameters you give.
+
+  Who to display
+  o: Only open players.
+  r: Only rated players.
+  f: Only free players (not playing a game).
+  g: Only registered players.
+
+  Ordering of display
+  s: Standard rating
+  b: Blitz rating
+
+  Format of display
+  t: Terse
+  v: Verbose
+  n: Win-loss record
