@@ -1,0 +1,9 @@
+Usage: pause
+
+  Requests from your opponent that the game your are playing be paused.
+Accepts a pause request if one is offered to you.
+
+  This rolls back the clocks to the time of the last move. To unpause a
+game use "unpause".
+
+See also: accept unpause
