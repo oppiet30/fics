@@ -1,0 +1,12 @@
+
+  To get a registered account, send mail to nash@visus.com with the
+following information:
+1. You desired account name. This should be at least 3 alphabetical
+   characters. No punctuation!
+2. Your real name.
+3. Your email address.
+
+A line like this would be very nice for the administrator:
+fics_addplayer red "Richard Nash" nash@visus.com
+
+  Of course, substitute your own information for the above.
