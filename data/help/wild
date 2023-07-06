@@ -1,0 +1,25 @@
+  Wild is a little different than the other catagories of boards in that
+they are generated dynamically.
+
+  1:  In this variant both sides have the same set of pieces as in
+      normal chess.  The white king starts on d1 or e1 and the black
+      king starts on d8 or e8, and the rooks are in their usual positions.
+      Bishops are always on opposite colors.  Subject to these constraints
+      the position is random.  Castling is similar to normal chess:
+      o-o-o indicates long castling and o-o short castling.
+
+  2:  Here the usual set of pieces is arranged randomly on the first
+      and eighth ranks.  Black's arrangement is always a mirror image
+      of White's.  Castling is not allowed.
+
+  3:  Here the set of pieces itself is randomly chosen (subject to the
+      constraint that there is one king of each color).  Black's pieces
+      mirror White's, and castling is not allowed.
+
+  4:  A random set of pieces is generated.  These are placed randomly for
+      white and black, subject to the constraint that the bishops must
+      be balanced.
+
+  5:  Surprise.
+
+See also: boards match
