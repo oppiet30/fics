@@ -1,0 +1,10 @@
+Usage: withdraw [1-n, match, draw, adjourn, abort,
+                takeback, switch, simul, all, player]
+
+  Withdraws an offer that you have made. If no parameter is given and
+there is only one offer, you withdraw it. If there is more than one
+offer (for example multiple match offers) then you must specify
+which one you don't want. You can either choose it by number, by type,
+all offers, or by the player's name making the offer.
+
+See Also: accept pending match draw adjourn abort takeback switch simul
