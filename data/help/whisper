@@ -1,0 +1,6 @@
+Usage: whisper message
+
+  Sends your message to all the observers of a game but NOT to the
+players.
+
+See Also: kibitz censor
