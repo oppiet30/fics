@@ -1,0 +1,99 @@
+# This is the common part of the Makefile regardless of which system
+# you compile on.
+
+
+OBJS=network.o playerdb.o command.o comproc.o movecheck.o \
+     ratings.o gamedb.o channel.o utils.o rmalloc.o legal.o vers.o variable.o \
+     board.o gameproc.o algcheck.o adminproc.o hostinfo.o lock.o timelog.o \
+     get_tcp_conn.o tally.o multicol.o
+
+PROGRAM=fics
+
+ADDPLAYER=fics_addplayer
+
+DELPLAYER=fics_delplayer
+
+MAILSERVER=fics_mailproc
+
+MAILPROC=mailproc
+
+all: ${PROGRAM} ${MAILSERVER} ${ADDPLAYER} ${DELPLAYER} ${MAILPROC}
+
+${PROGRAM}: ficsmain.o $(OBJS)
+        $(CC) ficsmain.o $(CFLAGS) $(OBJS) $(LNFLAGS) -o ${PROGRAM}
+
+${MAILSERVER}: fics_mailproc.o $(OBJS)
+        $(CC) fics_mailproc.o $(CFLAGS) $(OBJS) $(LNFLAGS) -o ${MAILSERVER}
+
+${ADDPLAYER}: fics_addplayer.o $(OBJS)
+        $(CC) fics_addplayer.o $(CFLAGS) $(OBJS) $(LNFLAGS) -o ${ADDPLAYER}
+
+${DELPLAYER}: fics_delplayer.o $(OBJS)
+        $(CC) fics_delplayer.o $(CFLAGS) $(OBJS) $(LNFLAGS) -o ${DELPLAYER}
+
+${MAILPROC}: mailproc.o lock.o network.o tally.o timelog.o rmalloc.o
+        $(CC) mailproc.o lock.o network.o tally.o timelog.o rmalloc.o $(CFLAGS) -o ${MAILPROC}
+
+vers.c: $(OBJS)
+        ${VERSION} >vers.c
+
+clean:
+        rm -f *.o ${PROGRAM} ${MAILSERVER} ${ADDPLAYER} ${MAILPROC} ${DELPLAYER} *~ vers.c
+        @ echo "Project cleaned."
+
+# Dependancies
+fics_addplayer.o: fics_addplayer.c utils.h playerdb.h timelog.h hostinfo.h command.h stdinclude.h utils.h
+
+fics_delplayer.o: fics_delplayer.c utils.h playerdb.h timelog.h hostinfo.h command.h stdinclude.h utils.h
+
+fics_mailproc.o: fics_mailproc.c ficsmain.h fics_config.h hostinfo.h command.h playerdb.h timelog.h gamedb.h ratings.h lock.h tally.h common.h stdinclude.h utils.h
+
+mailproc.o: mailproc.c common.h stdinclude.h lock.h tally.h network.h
+
+ficsmain.o: ficsmain.c ficsmain.h fics_config.h network.h command.h playerdb.h timelog.h utils.h channel.h ratings.h tally.h board.h common.h stdinclude.h
+
+network.o: network.c network.h command.h tally.h common.h stdinclude.h
+
+playerdb.o: playerdb.c playerdb.h timelog.h rmalloc.h utils.h ficsmain.h fics_config.h network.h channel.h gamedb.h board.h hostinfo.h command.h ratings.h common.h stdinclude.h
+
+command.o: command.c command.h command_list.h movecheck.h ficsmain.h fics_config.h utils.h playerdb.h timelog.h vers.h network.h gamedb.h board.h gameproc.h comproc.h ratings.h adminproc.h hostinfo.h tally.h common.h stdinclude.h
+
+comproc.o: comproc.c comproc.h command.h utils.h ficsmain.h fics_config.h playerdb.h timelog.h network.h rmalloc.h channel.h variable.h board.h gamedb.h tally.h hostinfo.h multicol.h common.h stdinclude.h
+
+movecheck.o: movecheck.c movecheck.h board.h utils.h algcheck.h gamedb.h common.h stdinclude.h
+
+ratings.o: ratings.c ratings.h playerdb.h timelog.h gamedb.h command.h ficsmain.h fics_config.h utils.h common.h stdinclude.h
+
+gamedb.o: gamedb.c gamedb.h rmalloc.h playerdb.h timelog.h utils.h command.h board.h gameproc.h ficsmain.h tally.h fics_config.h common.h stdinclude.h
+
+channel.o: channel.c channel.h rmalloc.h common.h stdinclude.h
+
+utils.o: command.h utils.c utils.h playerdb.h timelog.h network.h rmalloc.h fics_config.h common.h stdinclude.h
+
+rmalloc.o: rmalloc.c rmalloc.h common.h stdinclude.h
+
+legal.o: legal.c legal.h common.h stdinclude.h
+
+vers.o: vers.c vers.h common.h stdinclude.h
+
+variable.o: variable.c variable.h playerdb.h timelog.h utils.h ficsmain.h fics_config.h rmalloc.h board.h command.h common.h stdinclude.h
+
+board.o: board.c board.h utils.h gamedb.h playerdb.h timelog.h command.h common.h stdinclude.h
+
+gameproc.o: gameproc.c gameproc.h utils.h playerdb.h timelog.h gamedb.h movecheck.h rmalloc.h board.h command.h ficsmain.h fics_config.h ratings.h hostinfo.h comproc.h common.h stdinclude.h
+
+algcheck.o: algcheck.c algcheck.h movecheck.h board.h utils.h common.h stdinclude.h
+
+adminproc.o: adminproc.c adminproc.h command.h common.h playerdb.h timelog.h network.h rmalloc.h utils.h stdinclude.h
+
+hostinfo.o: hostinfo.c hostinfo.h ficsmain.h fics_config.h utils.h playerdb.h timelog.h command.h ratings.h  gamedb.h lock.h get_tcp_conn.h network.h rmalloc.h common.h stdinclude.h
+
+lock.o: lock.c lock.h common.h stdinclude.h
+
+timelog.o: timelog.c timelog.h rmalloc.h common.h stdinclude.h
+
+tally.o: tally.c tally.h common.h stdinclude.h
+
+multicol.o: multicol.c multicol.h utils.h rmalloc.h common.h stdinclude.h
+
+get_tcp_conn.o: get_tcp_conn.h get_tcp_conn.proto.h
