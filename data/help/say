@@ -1,0 +1,6 @@
+Usage: say message
+
+  Transmit your message to your opponent if you are playing a game or
+your last opponent if you are not.
+
+See also: tell censor shout kibitz whisper query shout
