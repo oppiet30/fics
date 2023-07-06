@@ -1,0 +1,42 @@
+Usage: variables [user]
+
+  Displays the variables of the given user. If no user is given then your
+variables are displayed.
+
+Variable Information
+
+Name        Function
+----        --------
+automail    If non-zero the score of your games will be mailed to you
+            upon completion.
+bell        If non-zero a ^G or bell will be sent when a board update
+            is done.
+ginform     If non-zero you will be informed when games begin or end.
+highlight   If non-zero player's names who tell you stuff will be
+            highlighted.
+kibitz      If non-zero you will here kibitz's.
+open        If non-zero you are willing to accept match requests.
+simopen     If non-zero you are willing to accept simul requests. This
+            variable is always set to 0 when you log in.
+pinform     If non-zero you will be informed when users connect or
+            disconnect to the server.
+private     If non-zero then all games you play will be private
+            regardless of your opponents 'private' variable.
+prompt      This string will be your prompt. Use 'set prompt' to
+            restore the system default.
+rated       If non-zero and all of these conditions hold, then your
+            game will be rated:
+            1: Your opponent's rated variable is non-zero
+            2: The time controls for the game qualify as a reasonable
+            3: There are no time-odds
+            4: The game started position is standard.
+realname    Your real name. Please only change it if it is incorrect.
+shout       If non-zero you will here shouts.
+style       The style of board to use. Do 'help style' to see the list.
+tell        You will here tell's and say's.
+uscf        Your USCF (or equivalent rating).
+0-9         This sets your plan information that is displayed when
+            someone fingers you. You can set these to an arbitrary
+            string.
+
+See also: set
