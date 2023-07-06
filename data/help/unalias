@@ -1,0 +1,5 @@
+Usage: unalias word
+
+  Removes the alias for word.
+
+See Also: alias
