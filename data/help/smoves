@@ -1,0 +1,5 @@
+Usage: smoves player1 player2
+
+  Displays the moves of the stored game between player1 and player2.
+
+See Also: stored load sposition
