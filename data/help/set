@@ -1,0 +1,9 @@
+Usage: set variable [value]
+
+  You have a number of predifined variable which control the behaviour
+of your account. This command allows you to control those variables.
+Generally, if "value" is omitted, the variable is toggled.
+
+  To see the list of variables you can control, do "help variables".
+
+See also: variables
