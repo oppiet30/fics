@@ -1,0 +1,14 @@
+Usage: query message
+
+  Displays your message to all users regardless if they are open to here
+shout's or not. This command can only be used twice per hour. It is
+intended to allow you to make serious inquiries, not the meaningless
+ramblings that 'shout'ing has turned into. Returns the number of users
+who heard your query. Query can be abbreviated with '?'.
+
+    ? Where do I get xboard?
+and
+    query Where do I get xboard?
+are equivalent.
+
+See also: shout tell censor variables it
