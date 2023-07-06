@@ -1,0 +1,5 @@
+Usage: style n
+
+  Sets your 'style' variable to n. Equivilant to "set style n"
+
+See also: variables style
